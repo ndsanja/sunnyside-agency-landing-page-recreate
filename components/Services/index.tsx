@@ -2,7 +2,11 @@ const Services = () => {
   return (
     <div className="grid grid-cols-1">
       <div>
-        <img src="/mobile/image-transform.jpg" alt="image-1" />
+        <img
+          className="w-full h-full object-cover object-center"
+          src="/mobile/image-transform.jpg"
+          alt="image-1"
+        />
       </div>
       <div className="text-center bg-primary-yellow/40 px-6 py-16 space-y-8">
         <h2 className="font-fraunces text-4xl text-neutral-very-dark-desaturated-blue">
@@ -23,7 +27,11 @@ const Services = () => {
         </div>
       </div>
       <div>
-        <img src="/mobile/image-stand-out.jpg" alt="image-2" />
+        <img
+          className="w-full h-full object-cover object-center"
+          src="/mobile/image-stand-out.jpg"
+          alt="image-2"
+        />
       </div>
       <div className="text-center bg-primary-yellow/40 px-6 py-16 space-y-8">
         <h2 className="font-fraunces text-4xl text-neutral-very-dark-desaturated-blue">
@@ -44,8 +52,12 @@ const Services = () => {
         </div>
       </div>
       <div className="relative">
-        <img src="/mobile/image-graphic-design.jpg" alt="image-3" />
-        <div className="absolute top-80 text-center px-6 pt-20 space-y-8">
+        <img
+          className="w-full h-full object-cover object-center"
+          src="/mobile/image-graphic-design.jpg"
+          alt="image-3"
+        />
+        <div className="w-full absolute bottom-20 left-1/2 -translate-x-1/2 text-center px-6 pt-20 space-y-8">
           <h2 className="font-fraunces text-4xl text-primary-dark-desaturated-cyan">
             Graphic Design
           </h2>
@@ -56,8 +68,12 @@ const Services = () => {
         </div>
       </div>
       <div className="relative">
-        <img src="/mobile/image-photography.jpg" alt="image-4" />
-        <div className="absolute top-80 text-center px-6 pt-20 space-y-8">
+        <img
+          className="w-full h-full object-cover object-center"
+          src="/mobile/image-photography.jpg"
+          alt="image-4"
+        />
+        <div className="w-full absolute bottom-20 left-1/2 -translate-x-1/2 text-center px-6 pt-20 space-y-8">
           <h2 className="font-fraunces text-4xl text-primary-dark-blue">
             Photography
           </h2>

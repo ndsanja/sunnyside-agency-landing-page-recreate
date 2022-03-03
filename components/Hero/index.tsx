@@ -3,7 +3,11 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="bg-primary-dark-moderate-cyan relative">
-      <img src="/mobile/image-header.jpg" alt="header-banner-mobile" />
+      <img
+        className="w-full h-full object-cover object-center"
+        src="/mobile/image-header.jpg"
+        alt="header-banner-mobile"
+      />
       <div className="absolute top-[30%] left-[50%] translate-x-[-50%]">
         <h1 className="uppercase text-4xl font-black tracking-[0.3em] font-fraunces  text-neutral-white text-center">
           We Are Creative
