@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between pt-8 px-6 absolute w-full z-10">
@@ -11,13 +13,35 @@ const Navbar = () => {
         </svg>
       </div>
       <div>
-        <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="md:hidden"
+          width="24"
+          height="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
             fill="#FFF"
             fillRule="evenodd"
           />
         </svg>
+        {/* dekstop menu */}
+        <div className="hidden md:flex items-center space-x-12 ">
+          <ul className="flex text-lg space-x-12 font-barlow text-neutral-white">
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+          <Link href="#">
+            <a
+              className="uppercase font-fraunces
+            font-semibold bg-neutral-white rounded-full px-4 py-2 text-sm"
+            >
+              Contact
+            </a>
+          </Link>
+        </div>
+        {/* dekstop menu */}
       </div>
     </div>
   );

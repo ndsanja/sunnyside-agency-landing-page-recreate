@@ -1,13 +1,30 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
     <div className="bg-primary-dark-moderate-cyan relative">
-      <img
-        className="w-full h-full object-cover object-center"
-        src="/mobile/image-header.jpg"
-        alt="header-banner-mobile"
-      />
+      <div className="md:hidden">
+        <Image
+          className="w-full h-full object-cover object-center md:hidden"
+          src="/mobile/image-header.jpg"
+          alt="header-banner-mobile"
+          height={1076}
+          width={750}
+          layout="responsive"
+        />
+      </div>
+      <div className="hidden md:block">
+        <Image
+          className="w-full h-full object-cover object-center "
+          src="/desktop/image-header.jpg"
+          alt="header-banner-dekstop"
+          height={1600}
+          width={2880}
+          layout="responsive"
+        />
+      </div>
+
       <div className="absolute top-[30%] left-[50%] translate-x-[-50%]">
         <h1 className="uppercase text-4xl font-black tracking-[0.3em] font-fraunces  text-neutral-white text-center">
           We Are Creative
